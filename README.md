@@ -45,21 +45,21 @@ export class StatusComponent {
     </button>
 </div>
 <!--Without ng-container -->
-<div [ngSwitch]="status" class="border p-3">
-    <ng-container *ngSwitchCase="'pending'">
-        <p class="text-warning">Your Request is Pending...</p>
-    </ng-container>
-    <ng-container *ngSwitchCase="'approved'">
-        <p class="text-warning">Your Request is Approved...</p>
-    </ng-container>
-    <ng-container *ngSwitchCase="'rejected'">
-        <p class="text-warning">Your Request is Rejected...</p>
-    </ng-container>
-    <ng-container *ngSwitchDefault>
-        <p class="text-warning">Unknown ..</p>
-    </ng-container>
-</div>
 
+<div [ngSwitch]="status" class="border p-3">
+    <div *ngSwitchCase="'pending'">
+        <p class="text-warning">Your Request is Pending...</p>
+    </div>
+    <div *ngSwitchCase="'approved'">
+        <p class="text-warning">Your Request is Approved...</p>
+    </div>
+    <div *ngSwitchCase="'rejected'">
+        <p class="text-warning">Your Request is Rejected...</p>
+    </div>
+    <div *ngSwitchCase="'pending'">
+        <p class="text-warning">Your Request is Pending...</p>
+    </div>
+</div>
 
 
 <hr/>
