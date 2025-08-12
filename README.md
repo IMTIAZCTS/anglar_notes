@@ -1,5 +1,9 @@
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1e96acaa-8b69-4639-a5b1-4fa3611de358" />
 
+### What is ng-container?
+- <ng-container> is a logical container in Angular that does not render any extra HTML in the DOM. It’s used to group structural directives like *ngIf, *ngFor,
+   or *ngSwitchCase without adding extra elements like  ``` <div> or <span>.```
+
 
 ## Ng Container in angular
 ------------------------------------------------
