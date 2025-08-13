@@ -2166,7 +2166,22 @@ Step16: Open the browser and type the following url:
     http://localhost:4200/
 
 -------------------------------------------------------------------------------------------------------------
+Now We need to configure the dashboard i.e. 
 
+Step1: Create the dashboard component
+> ng g c components/dashboard
+Step2: Configure the route
+export const routes: Routes = [
+    {path:'home',component:HomeComponent},
+    {path:'service',component:ServiceComponent},
+    {path:'aboutus',component:AboutusComponent},
+    {path:'gallery',component:GalleryComponent},
+    {path:'login',component:LoginComponent},
+
+    {path:'dashboard',component:DashboardComponent}
+   
+];
+Step3: Inside the login.component.ts
 
 
 
